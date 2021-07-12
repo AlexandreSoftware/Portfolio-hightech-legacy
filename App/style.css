@@ -1,8 +1,66 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+/*
+-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+*/
+:root{
+  font-size: 18px;
+    font-family: 'share_tech_monoregular', Helvetica, Arial, sans-serif;
+    src: url('sharetechmono-regular-webfont.woff2') format('woff2'),
+          url('sharetechmono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  --sidebar-size : 10vw;
+  --rufous: #a60909ff;
+  --blood-red: #6a0606ff;
+  --black: #000000ff;
+  --ghost-white: #f0eff4ff;
+  --midnight-blue: #070e57ff;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background: var(--black);
+}
+#app {  
+  
+}
+main{
+  padding-left: var(--sidebar-size);
+  
+  background-color: var(--blood-red);
+  text-align: center;  
+}
+.sidebar{
+  position: fixed;
+  top:0;
+  left: 0;
+  height: 100vh;
+  width: var(--sidebar-size);
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: red;
+  background: linear-gradient(var(--rufous),var(--blood-red));
+  border-right: 2px solid var(--black);
+  
+}
+.sidebar div{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: 4vh;
+}
+.sidebar div div{
+  text-align: center;
+  border: 1px solid pink;
+  width: 40%;
+  padding-top: 25%;
+  
+  margin-left: 25%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
