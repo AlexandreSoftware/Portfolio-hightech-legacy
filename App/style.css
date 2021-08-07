@@ -26,9 +26,9 @@ body{
   background: var(--black);
 }
 .main-navbar{
+  position: fixed;
+  width: 100%;
   background-color: cyan;
-  padding: 2vh;
-  padding-left: 1vw;
   border-bottom: 30px solid;
   border-image:  linear-gradient(
     cyan,
@@ -41,9 +41,11 @@ body{
   background-repeat: no-repeat;
   background-position-y: center;
   background-blend-mode: multiply;
+  z-index: 1;
 } 
 .main-navbar .button{
   background-color: var(--midnight-blue);
+  margin: 2vw;
   border: 4px solid ;
   padding : 2vw;
   width: 20px;
@@ -56,16 +58,42 @@ body{
   box-shadow:0px 0px 2vh cyan;
 }
 .main-navbar :first-child{
-  margin-left: 0;
+
+  margin-left: 1vw;
   margin-right: auto;
 }
 
 #app {  
-  
+  padding-top: 20%;
+  background-color: orange;
 }
-main{
-  padding-left: var(--sidebar-size);
-  
+main{  
   background-color: var(--blood-red);
   text-align: center;  
+}
+.webgl-wrapper{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: pink;
+}
+.webgl-content-wrapper{
+  position: relative;
+  background-color: purple;
+}
+.bl-triangle{
+  position: fixed;
+
+  width : 30%;
+  height: 50%;
+  background: linear-gradient(to bottom left, transparent 0%, transparent 50%, red 50%, var(--blood-red) 10%);  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+.tr-triangle{
+  position: fixed;
+  top:0;
+  right:0;
+  height: 30%;
+  background-color:red;
 }
