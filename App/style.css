@@ -1,99 +1,112 @@
-/*
--webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-*/
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+/*global*/
 :root{
   font-size: 18px;
-    font-family: 'share_tech_monoregular', Helvetica, Arial, sans-serif;
-    src: url('sharetechmono-regular-webfont.woff2') format('woff2'),
-          url('sharetechmono-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  --sidebar-size : 10vw;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: normal;
+  font-style: normal;
+  --navbar-size : 10vh;
   --rufous: #a60909ff;
   --blood-red: #6a0606ff;
   --black: #000000ff;
   --ghost-white: #f0eff4ff;
   --midnight-blue: #070e57ff;
 }
+*{
+  box-sizing: border-box;
+}
 body{
   margin: 0;
   padding: 0;
-  background-color: black;
-  background: var(--black);
+  color:white;
+}
+
+/*page-overlay*/
+.page-overlay{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: -1;
+}
+
+.btn {
+  display: inline-block;
+  -webkit-clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0% 80%, 0% 20%); clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  padding-top: auto;
+  margin-top:auto;
+}
+.clipped-btn{
+  display: inline-block;
+  clip-path: polygon(5% 5%, 80% 7%, 95% 20%, 95% 80%, 95% 95%, 20% 95%, 5% 80%, 5% 21%);
+
 }
 .main-navbar{
   position: fixed;
-  width: 100%;
-  background-color: cyan;
-  border-bottom: 30px solid;
-  border-image:  linear-gradient(
-    cyan,
-    var(--blood-red)
-  ) 50;
-  display: flex;
-  justify-content: space-around;
-  background-image: url(images/high-tech-2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-blend-mode: multiply;
-  z-index: 1;
-} 
-.main-navbar .button{
-  background-color: var(--midnight-blue);
-  margin: 2vw;
-  border: 4px solid ;
-  padding : 2vw;
-  width: 20px;
-  margin-left: 4vh;
+  width: 100vw;
+  height: var(--navbar-size);
+  z-index: 10;
   text-align: center;
-  border-radius: 30%;
-}
-.main-navbar .button:hover{
-  transition: 0.05s;
-  box-shadow:0px 0px 2vh cyan;
-}
-.main-navbar :first-child{
-
-  margin-left: 1vw;
-  margin-right: auto;
-}
-
-#app {  
-  padding-top: 20%;
-  background-color: orange;
-}
-main{  
+  display: flex;
+  background-color: black;
+  border-bottom: 2px solid var(--blood-red);
+  justify-content: space-evenly;
+} 
+.main-navbar .btn{
+  height: 7vh;
+  width: 17vh;
+  margin: 2vh;
   background-color: var(--blood-red);
-  text-align: center;  
+  vertical-align: bottom;
 }
-.webgl-wrapper{
-  position: fixed;
+.main-navbar .btn .clipped-btn{
   height: 100%;
   width: 100%;
-  background-color: pink;
+  margin: 0;
+  padding-top: 2vh ;
+  background-color: black;
+}
+.main-navbar .btn .clipped-btn:hover{
+  background-color: rgba(124, 0, 0, 0.685);
+}
+.webgl-wrapper{
+  
+
 }
 .webgl-content-wrapper{
-  position: relative;
-  background-color: purple;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
 }
 .bl-triangle{
   position: fixed;
-
-  width : 30%;
+  width : 50%;
   height: 50%;
-  background: linear-gradient(to bottom left, transparent 0%, transparent 50%, red 50%, var(--blood-red) 10%);  bottom: 0;
+  background: linear-gradient(to bottom left, transparent 0%, transparent 50%, transparent 50%, transparent 50%, var(--blood-red) 50.5%, var(--blood-red) 50.5%);  bottom: 0;
   left: 0;
-  z-index: 999;
 }
 .tr-triangle{
+  top:10%;
+  right: 0;
   position: fixed;
-  top:0;
-  right:0;
-  height: 30%;
-  background-color:red;
+  float: right;
+  height: 50%;
+  width: 50%;
+  background: linear-gradient(to top right, transparent 50%, transparent 50%, var(--blood-red) 50.5%, var(--blood-red) 50.5%);  bottom: 0;
+  z-index: 100;
+}
+
+#app {  
+  padding-top: calc(var(--navbar-size)*1.2);
+  margin: 0 10vw;
+  background-color: transparent;
+}
+main{  
+}
+.webgl-canvas{
+  background-color:black;
+  width: 100vw;
+  height: 100vh;
 }
