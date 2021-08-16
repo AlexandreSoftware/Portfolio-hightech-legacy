@@ -1,12 +1,10 @@
 
 #app {  
     padding-top: calc(var(--navbar-size)*1.2);
-    
-    background-color: transparent;
-  }
+    }
   #app .titulo{
     text-align: center;
     overflow: hidden;
     text-overflow:clip;
-    
+    background-color: transparent;
   }
