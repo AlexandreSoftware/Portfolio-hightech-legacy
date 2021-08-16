@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './css/Index.css';
+import './css/Style.css';
 
+import reportWebVitals from './reportWebVitals';
+import Navbar from "./Navbar"
+import Webgl from "./Webgl"
+import App from './App';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Navbar />
+    <Webgl />
   </React.StrictMode>,
   document.getElementById('root')
 );
