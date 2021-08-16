@@ -11,6 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <Webgl />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
