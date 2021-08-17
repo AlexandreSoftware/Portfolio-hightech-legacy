@@ -7,11 +7,13 @@ import reportWebVitals from './reportWebVitals';
 import Navbar from "./Navbar"
 import Webgl from "./Webgl"
 import App from './App';
+import Footer from "./Footer"
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <Webgl />
     <App />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

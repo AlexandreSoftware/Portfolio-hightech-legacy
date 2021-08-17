@@ -1,12 +1,12 @@
 import "./css/Navbar.css"
-
+import Clip_btn from "./Clip_btn"
 function Navbar(){
     return(
         <div class="main-navbar">
-            <span class="btn"><div class="clipped-btn"><a href="http://" target="_blank" rel="noopener noreferrer">Home</a></div></span>
-            <span class="btn"><div class="clipped-btn">Projects</div></span>
-            <span class="btn"><div class="clipped-btn">About</div></span>
-            <span class="btn"><div class="clipped-btn">Contact</div></span>
+            <Clip_btn text="Home" link="javascript:void(0)" />
+            <Clip_btn text="Projects" link="javascript:void(0)" />
+            <Clip_btn text="About" link="javascript:void(0)" />
+            <Clip_btn text="Contact" link="javascript:void(0)" />
         </div>
     )
 }

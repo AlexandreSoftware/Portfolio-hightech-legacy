@@ -1,0 +1,38 @@
+footer.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: var(--navbar-size);
+    background-color: black;
+    border-top: 2px solid var(--blood-red);
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("../img/wp5842964.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-color: #030303;
+}
+footer.footer .btn{
+    height: 7vh;
+    width: 14vh;
+    margin: 1.5vh;
+    display: inline-block;
+}
+footer.footer > div{
+    height: 7vh;
+    width: 14vw;
+    margin: 1.5vh;
+    display: inline-block;
+}
+
+footer.footer .btn .clipped-btn{
+    height: 90%;
+    width: 95%;
+    margin:2.5%;
+    margin-bottom: 5%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 6vh;
+}
