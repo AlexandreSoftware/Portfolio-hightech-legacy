@@ -8,13 +8,17 @@ import Navbar from "./Navbar"
 import Webgl from "./Webgl"
 import App from './App';
 import Footer from "./Footer"
+import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
+
 ReactDOM.render(
-  <React.StrictMode>
-    <Navbar />
-    <Webgl />
-    <App />
-    <Footer />
-  </React.StrictMode>,
+  <Router>
+    <React.StrictMode>
+      <Navbar />
+      <Webgl />
+      <App />
+      <Footer />
+    </React.StrictMode>
+  </Router>,
   document.getElementById('root')
 );
 

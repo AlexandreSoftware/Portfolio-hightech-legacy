@@ -1,5 +1,5 @@
 
-function CarrerSummary(){
+function Home(){
     return (
         <p>
             Hi, I'm Carlos (also known as Xandrf),
@@ -9,4 +9,4 @@ function CarrerSummary(){
         </p>
     )
 }
-export default CarrerSummary;
+export default Home;
