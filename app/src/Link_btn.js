@@ -1,7 +1,7 @@
 import reactDom from "react-dom";
 import "./css/Btn.css"
 
-function Link_btn(props){
+function Link_Btn(props){
     const link = props.link;
     const image = props.image;
     return( 
@@ -11,4 +11,4 @@ function Link_btn(props){
 
     );
 }
-export default Link_btn;
+export default Link_Btn;

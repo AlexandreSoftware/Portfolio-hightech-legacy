@@ -8,7 +8,7 @@ import Navbar from "./Navbar"
 import Webgl from "./Webgl"
 import App from './App';
 import Footer from "./Footer"
-import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
 
 ReactDOM.render(
   <Router>

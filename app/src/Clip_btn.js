@@ -1,6 +1,6 @@
 import "./css/Btn.css"
 import { Link } from 'react-router-dom';
-function Clip_btn(props){
+function Clip_Btn(props){
     const link = props.link;
     const text = props.text;
     return(
@@ -11,4 +11,4 @@ function Clip_btn(props){
         </Link>
     )
 }
-export default Clip_btn;
+export default Clip_Btn;

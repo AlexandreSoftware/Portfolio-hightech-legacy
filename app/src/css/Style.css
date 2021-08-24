@@ -32,6 +32,8 @@ body{
   justify-content: flex-start;
   z-index: -1;
 }
-
+p{
+  text-align: center;
+}
 
 

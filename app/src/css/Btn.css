@@ -8,6 +8,7 @@
 }
 .clip-btn .clipped-btn{
   background-color: black;
+  border-radius: 10% 0 10% 0;
 }
 .clip-btn .clipped-btn:hover{
   background-color: rgba(236, 12, 12, 0.685);
