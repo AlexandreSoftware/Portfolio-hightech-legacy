@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import "./css/App.css"
 import Home from "./Home"
 import { Route,Switch } from 'react-router-dom';
-import Projects from './Projects'; 
+import ProjectsContainer from './ProjectsContainer'; 
 import About from './About';
 import Contact from './Contact';
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/projects">
-          <Projects />
+          <ProjectsContainer />
         </Route>
         <Route path="/about">
           <About></About>
