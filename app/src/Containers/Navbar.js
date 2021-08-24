@@ -1,5 +1,5 @@
 import "./css/Navbar.css"
-import Clip_Btn from "./Clip_Btn"
+import Clip_Btn from "../Components/Clip_Btn"
 function Navbar(){
     return(
         <div class="main-navbar">

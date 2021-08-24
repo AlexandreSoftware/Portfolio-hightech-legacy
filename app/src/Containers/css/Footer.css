@@ -8,7 +8,7 @@ footer.footer {
     border-top: 2px solid var(--blood-red);
     display: flex;
     justify-content: flex-end;
-    background-image: url("../img/wp5842964.jpg");
+    background-image: url("../../img/wp5842964.jpg");
     background-position:center ;
     background-repeat: no-repeat;
     background-blend-mode: soft-light;

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import "./css/App.css"
 import Home from "./Home"
 import { Route,Switch } from 'react-router-dom';

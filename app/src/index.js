@@ -4,10 +4,10 @@ import './css/Index.css';
 import './css/Style.css';
 
 import reportWebVitals from './reportWebVitals';
-import Navbar from "./Navbar"
-import Webgl from "./Webgl"
-import App from './App';
-import Footer from "./Footer"
+import Navbar from "./Containers/Navbar"
+import Webgl from "./Containers/Webgl"
+import App from './Containers/App';
+import Footer from "./Containers/Footer"
 import { BrowserRouter as Router} from 'react-router-dom';
 
 ReactDOM.render(
