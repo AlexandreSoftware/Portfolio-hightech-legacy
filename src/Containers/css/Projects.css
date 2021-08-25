@@ -1,0 +1,19 @@
+.Projects-container{
+    background-color: white;
+    margin: auto;
+    width: 100%;
+    height: 65vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    overflow: scroll;
+    scrollbar-width: 0px;
+    scrollbar-color: red black;
+    scrollbar-width: thin ;
+}
+.Projects-container .project{
+    background-color: orange ;
+    margin:0 1vh;
+    width: 20vh;
+    height: 30vh;
+}

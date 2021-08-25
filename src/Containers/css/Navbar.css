@@ -23,7 +23,7 @@
   width: var(--width);
   margin: 1.5vh
 }
-.main-navbar .clip-btn .clipped-btn{
+.main-navbar .btn-container .clip-btn .clipped-btn{
   height: 100%;
   width: 100%;
   margin: 0;
@@ -31,3 +31,9 @@
   vertical-align: center;
   line-height: var(--height);
 }
+.main-navbar .btn-container{
+  width: fit-content;
+  height: fit-content;
+}
+
+

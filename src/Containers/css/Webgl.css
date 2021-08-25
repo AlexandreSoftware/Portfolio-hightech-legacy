@@ -23,7 +23,7 @@
   z-index: 100;
 }
 .webgl-canvas{
-  background-color:black;
+  background-color:white;
   width: 100vw;
   height: 100vh;
 }
