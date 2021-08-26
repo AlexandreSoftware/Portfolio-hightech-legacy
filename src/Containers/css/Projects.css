@@ -73,9 +73,10 @@
     text-overflow: ellipsis;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    padding-left: 2vh;
 }
 .Projects-container .project .title{
-    font-size: 3vh;
+    font-size: 2vh;
     width: 90%;
     border-top:2px solid grey;
     border-bottom:2px solid grey;
@@ -86,6 +87,8 @@
     margin-right: 5%;
     margin-left:5%;
     -webkit-line-clamp: 2;
+    overflow:hidden;
+    text-overflow: ellipsis;
 }
 .Projects-container .project button:hover{
     color: black;
