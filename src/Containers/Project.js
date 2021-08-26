@@ -5,7 +5,7 @@ function Project(props){
     let img = props.image;
     return(
        <div class="project">
-           <img src={props.image} class="content-image"/>
+           <img src={img} alt="cant load image" class="content-image"/>
            <span class="title">{title}</span>
            <div class="content-text">
                {text}

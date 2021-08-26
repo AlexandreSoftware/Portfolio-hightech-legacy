@@ -2,7 +2,7 @@
 /*global*/
 :root{
   font-size: 18px;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Share Tech Mono';
   font-weight: normal;
   font-style: normal;
   --navbar-size : 10vh;
@@ -12,6 +12,8 @@
   --black: #000000ff;
   --ghost-white: #f0eff4ff;
   --midnight-blue: #070e57ff;
+  scrollbar-color: red black;
+  scrollbar-width: thin;
 }
 *{
   box-sizing: border-box;
@@ -20,6 +22,7 @@ body{
   margin: 0;
   padding: 0;
   color:white;
+  font-family: 'Share Tech Mono';
 }
 
 /*page-overlay*/
@@ -35,5 +38,3 @@ body{
 p{
   text-align: center;
 }
-
-
