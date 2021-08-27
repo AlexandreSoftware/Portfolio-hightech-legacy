@@ -16,7 +16,6 @@ ReactDOM.render(
       <Navbar />
       <Webgl />
       <App />
-      <Footer />
     </React.StrictMode>
   </Router>,
   document.getElementById('root')

@@ -1,19 +1,24 @@
+.btn-container{
+  clip-path: polygon(7.94% 12.33%, 75.6% 12.87%, 93.53% 28.8%, 93.53% 80%, 93.53% 87.66%, 24.40% 87.66%, 6.84% 73.6%, 6.48% 15.13%);
+  background-color: rgba(255, 0, 0, 0.705) ;
+  
+}
 .clipped-btn{
   display: inline-block;
   clip-path: polygon(5% 5%, 80% 7%, 95% 20%, 95% 80%, 95% 95%, 20% 95%, 5% 80%, 5% 21%);  
 }
-.clip-btn {
+.btn-container .clip-btn {
   -webkit-clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0% 80%, 0% 20%); clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
   background-color: var(--blood-red);
 }
-.clip-btn .clipped-btn{
+.btn-container .clip-btn .clipped-btn{
   background-color: black;
   border-radius: 10% 0 10% 0;
 }
-.clip-btn .clipped-btn:hover{
+.btn-container .clip-btn .clipped-btn:hover{
   background-color: rgba(236, 12, 12, 0.685);
 }
-.clip-btn a , .clipped-btn a {
+.btn-container .clip-btn a , .clipped-btn a {
   color:white;
   text-decoration: none;
 }
@@ -33,7 +38,7 @@ a:visited{
   text-align: center;
 }
 
-img{
+.btn.link-container img{
   margin-left: auto;
   margin-right: auto;
   display: block;

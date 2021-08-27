@@ -9,7 +9,7 @@ function App() {
   return (
     <div id="app">
       
-      <h1 class="titulo">Carlos Alexandre De oliveira Junior</h1>
+      <h1 class="title">Carlos Alexandre De oliveira Junior</h1>
       <Switch>
         <Route exact path={["/home", "/"]}>
           <Home />

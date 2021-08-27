@@ -2,9 +2,10 @@
   #app {  
     padding-top: calc(var(--navbar-size)*1.2);
     }
-  #app .titulo{
+  #app > .title{
+    font-size: 5vw;
     text-align: center;
     overflow: hidden;
-    text-overflow:clip;
-    
+    text-overflow: ellipsis;
+    word-wrap: break-word;
   }

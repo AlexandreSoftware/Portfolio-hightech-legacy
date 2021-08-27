@@ -4,9 +4,11 @@ function Clip_Btn(props){
     const link = props.link;
     const text = props.text;
     return(
-        <Link to={link} class="btn clip-btn">
-            <div class="clipped-btn">
-                {text}
+        <Link to={link} class="btn-container">
+            <div  class="btn clip-btn">
+                <div class="clipped-btn">
+                    {text}
+                </div>
             </div>
         </Link>
     )
